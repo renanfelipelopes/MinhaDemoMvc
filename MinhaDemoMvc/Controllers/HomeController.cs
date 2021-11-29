@@ -32,7 +32,7 @@ namespace MinhaDemoMvc.Controllers
         [Route("politica-de-privacidade")]
         public IActionResult Privacy()
         {
-            return View();
+            return Json("{'nome':'Renan'}");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
