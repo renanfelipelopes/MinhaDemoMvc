@@ -25,17 +25,17 @@ namespace MinhaDemoMvc.Controllers
         [Route("pagina-inicial/{id:int}/{categoria:guid}")]
         public IActionResult Index(string id, string categoria)
         {
-            var filme = new Filme 
-            {
-                Titulo = "Oi",
-                DataLancamento = DateTime.Now,
-                Genero = null,
-                Avaliacao = 10,
-                Valor = 20000
-            };
+            //var filme = new Filme 
+            //{
+            //    Titulo = "Oi",
+            //    DataLancamento = DateTime.Now,
+            //    Genero = null,
+            //    Avaliacao = 10,
+            //    Valor = 20000
+            //};
 
-            return RedirectToAction("Privacy", filme);
-            //return View();
+            //return RedirectToAction("Privacy", filme);
+            return View();
         }
 
         [Route("privacidade")]
