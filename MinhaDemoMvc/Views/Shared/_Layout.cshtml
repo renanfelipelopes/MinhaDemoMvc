@@ -26,6 +26,7 @@
                         </li>
                     </ul>
                 </div>
+                <vc:Carrinho></vc:Carrinho>
             </div>
         </nav>
     </header>
@@ -39,10 +40,12 @@
         <div class="container">
             &copy; 2021 - MinhaDemoMvc - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
+        <vc:Carrinho></vc:Carrinho>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/fc2a4c719a.js" crossorigin="anonymous"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
